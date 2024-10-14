@@ -17,7 +17,8 @@ public class VowelCounter {
         //Declarations
         String sentence;
         int vowelCount;
-        
+       
+        //Prompting a user to enter a word
         System.out.println("Enter a word: ");
         sentence = sc.next();
         
@@ -28,10 +29,12 @@ public class VowelCounter {
     }
     
     public static int countVowels(String sentence){
+        //Declarations
        int count=0;
        sentence = sentence.toLowerCase();
        for (int i=0; i<sentence.length();i++){
            char ch = sentence.charAt(i);
+           //if statement
            if( ch == 'a'||ch=='A'||ch=='e'||ch=='E'||ch=='i'||ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch=='U'){
                count++;
            }
