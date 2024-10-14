@@ -18,7 +18,7 @@ public class VowelCounter {
         String sentence;
         int vowelCount;
         
-        System.out.println("Enter a sentence: ");
+        System.out.println("Enter a word: ");
         sentence = sc.next();
         
         vowelCount = countVowels(sentence);
